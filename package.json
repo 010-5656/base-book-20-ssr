@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
+    "@loadable/babel-plugin": "^5.15.3",
+    "@loadable/component": "^5.15.3",
+    "@loadable/server": "^5.15.3",
+    "@loadable/webpack-plugin": "^5.15.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -48,6 +52,7 @@
     "react-refresh": "^0.11.0",
     "react-router-dom": "5.0.1",
     "redux": "^4.2.1",
+    "redux-saga": "^1.2.2",
     "redux-thunk": "^2.4.2",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
@@ -144,6 +149,9 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      "@loadable/babel-plugin"
     ]
   }
 }
